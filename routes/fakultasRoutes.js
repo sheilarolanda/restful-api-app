@@ -6,4 +6,5 @@ const cekApiKey = require('../middlewares/cekApiKey');
 router.get('/', fakultasController.getAll);
 router.get('/:id', fakultasController.getById);
 router.post('/', cekApiKey, fakultasController.create);
+
 module.exports = router;
